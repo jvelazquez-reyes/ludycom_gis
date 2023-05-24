@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>History</h1>
+
+<ul>
+  {% for petition in petitions %}
+  <li>
+    
+    <a href="{% url 'petition_detail' petition.id %}">
+      <p>Longitude: {{petition.longitude}} Latitude: {{petition.latitude}}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

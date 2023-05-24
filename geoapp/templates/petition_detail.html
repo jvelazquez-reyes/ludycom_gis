@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<p>ID: {{petition.id}}</p>
+
+<p>Longitude: {{petition.longitude}}</p>
+
+<p>Latitude: {{petition.latitude}}</p>
+
+<p>Type: {{petition.place}}</p>
+
+<p>Name: {{petition.name}}</p>
+
+<p>Distance: {{petition.distance}}</p>
+
+{{error}}
+
+{% endblock %}
